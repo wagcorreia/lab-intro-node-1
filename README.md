@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Today is our first day using Node, so we will practice doing some basic operations. **Ready to start?**
+In this Lab we're gonna practice OOP (Object Oriented Programming) and algorithms some more. This is a simple Lab where you're supposed to develop a class, instantiate it and test the results yourself. No automated testing in this one, but you can write your own if you want :)
 
 ## Requirements
 
@@ -23,44 +23,6 @@ Today is our first day using Node, so we will practice doing some basic operatio
 
 - Create Pull Request so your TAs can check up your work.
 
-## Testing - Introduction
-
-This exercise will be completed through a series of tests. You should be familiar with testing from previous lessons and exercises, but just in case, here is a short recap of Intro to testing. :wink:
-
-### What is testing?
-
-_Software testing is a process of executing an application to validate and verify that it meets the business and technical requirements and works as expected._
-
-Testing is a **process**, not a single activity. As early as we start developing and conducting tests, the better are chances that we can prevent deficiencies in the code or product design.
-
-In this exercise, we have created all the tests you need to create the solution, and you have to execute them all and create the code to accomplish all the requirements.
-
-Tests prove that your code actually works in every situation in which it’s designed to work. Even when you are improving the design or creating new features, you can change your current code without breaking what already works.
-
-### Testing with Mocha
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_99e6ffece1023c0fe141512493fc6ad2.png)
-
-[Mocha](https://mochajs.org/) is a feature-rich JavaScript testing framework running on Node.js and in the browser, making asynchronous testing simple and fun.
-
-<!-- Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. -->
-
-We have already included Mocha in the project you just forked, so let's see how to use it to implement our code.
-
-### Usage
-
-To start using mocha, you have to install it as a dependency for this project. Remember that we should always use the Node Package Manager (npm) to manage all the packages in our projects.
-
-Run the following command:
-
-```
-$ npm install mocha
-```
-
-After this step, we will see `dependencies` in the _package.json_ and mocha will be there.
-
-_Note_: The current version of mocha is 6.2.2.
-
 ## Project Structure
 
 Before we start coding, let's explain the provided project structure:
@@ -75,49 +37,7 @@ Before we start coding, let's explain the provided project structure:
 
 We are going to be working with the **`index.js`** file. Here we will write the implementation of our `SortedList` class.
 
-The `test` folder contains all the tests we will execute with Mocha.
-
-### Running the tests
-
-Running our tests with Mocha is super easy; you just have to run `npm test`.
-
-<!-- Before you run this command, make sure you navigate to the `starter-code` directory. -->
-
-```
-$ npm test
-
-> lab-intro-node@1.0.0 test /Users/Sandra/Desktop/iron-labs/lab-intro-node
-> mocha
-
-
-  SortedList
-    Constructor
-      1) should have items and length properties
-    #add(x)
-      2) should add a single value to SortedList
-      3) should add a third value to SortedList
-      4) should add a value while keeping the list sorted
-    #get(i)
-      5) should return an OutOfBounds exception if there is no element in that position
-      6) should return the element in that position
-    #max()
-      7) should return an EmptySortedList exception if there is no elements in the list
-      8) should return the max (highest) value in the list
-    #min()
-      9) should return an EmptySortedList exception if there are no elements in the list
-      10) should return the min (lowest) value in the list
-    #sum()
-      11) should return the sum of all elements in the list
-      12) should return 0 for an empty sorted list
-    #avg()
-      13) should return an EmptySortedList exception if there are no elements
-      14) should return the average of elements in the list
-
-  0 passing (13ms)
-  14 failing
-```
-
-Don't worry that none of the tests are passing... you will make them ALL PASS!! :smile:
+You can test your code using a tool like RunJS or Repl.it. Just paste the code you write there into **`index.js`** after you are done.
 
 ## Instructions
 
@@ -153,7 +73,7 @@ In addition, make sure you _throw_ an error with the message _OutOfBounds_ if a 
 To throw an error, you can do the following:
 
 ```js
-throw new Error('OutOfBounds');
+throw new Error("OutOfBounds");
 ```
 
 <!-- ### Iteration 4: make that list sorted!
@@ -168,7 +88,7 @@ The `max()` method should return the highest value of the array.
 In case you have an empty `SortedList`, you must throw an error with the message "EmptySortedList". For this, you can use:
 
 ```js
-throw new Error('EmptySortedList');
+throw new Error("EmptySortedList");
 ```
 
 ### Iteration 5: min()
